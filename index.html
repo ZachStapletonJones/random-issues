@@ -3,25 +3,80 @@
   <title>random words</title>
   <style>
     
-   
-    
+
+#random {
+  min-width:600px;
+  min-height: 300px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    }
+
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
     #output {
-    
-      font-family:fantisy;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width:100%;
+    min-height: 200px;
+   
     }
   </style>
 </head>
 <body>
 
-
+<div id="random">
   <div>
-    <button>Generate</button>
+    <button class="button-5" role="button">Pick Random Challenge</button>
   </div>
-  <div>
+
    
   
 
   <div id="output"></div>
+  </div>
 
   <script>
    
@@ -35,21 +90,37 @@
      
       
       var theWord= [
-        'dog',
-        'potato',
-        'cow',
-        'parrot',
-        'stone',
-        'watch',
-         'house',
-         'biolumonesance',
-        'brake',
-        'potato/salad',
-        'trip',
-        'hipopotomus',
-        'mask',
-        'chicken',
-        'Pneumonoultramicroscopicsilicovolcanoconiosis',
+        "Climate change and sea-level rise in Bangladesh: The low-lying coastal areas of Bangladesh are extremely vulnerable to sea-level rise, causing increased flooding, saltwater intrusion, and loss of land, which affects millions of people and their livelihoods.",
+"Deforestation in the Amazon Rainforest, Brazil: Deforestation driven by logging, agriculture, and cattle ranching continues to threaten the Amazon, causing loss of biodiversity, climate change impacts, and displacement of indigenous communities.",
+"Air pollution in Delhi, India: Delhi experiences hazardous levels of air pollution, primarily from vehicle emissions, industrial activity, and crop burning, leading to serious health problems and decreased life expectancy for its residents.",
+"Water scarcity in Cape Town, South Africa: Cape Town faced a severe water crisis in 2018, and the region continues to struggle with limited water resources due to climate change and inefficient water management, affecting both the population and the economy.",
+"Coral bleaching in the Great Barrier Reef, Australia: Rising sea temperatures and pollution have led to widespread coral bleaching, which threatens the health of the Great Barrier Reef, causing significant ecological and economic consequences.",
+"The European migration crisis: Conflict, persecution, and economic hardship in countries like Syria, Afghanistan, and Eritrea have driven many people to seek asylum in European countries, putting strain on social services and infrastructure and leading to political tensions.",
+"Food insecurity in Yemen: Ongoing conflict and economic collapse in Yemen have led to widespread food insecurity, leaving millions of people at risk of famine and malnutrition.",
+"Plastic pollution in the Pacific Garbage Patch: The Great Pacific Garbage Patch, a massive accumulation of plastic waste in the Pacific Ocean, poses a threat to marine life and ecosystems, as well as human health, through the ingestion of microplastics and toxic chemicals.",
+"Income inequality in the United States: The gap between the rich and the poor has grown significantly in the United States, leading to issues such as lack of access to quality education, healthcare, and affordable housing for many Americans.",
+"Rapid urbanization in Lagos, Nigeria: Lagos is one of the fastest-growing cities in the world, and rapid urbanization has led to inadequate infrastructure, housing, and public services, exacerbating poverty, pollution, and traffic congestion in the city.",
+"Melting Arctic ice in the Arctic region: Climate change has led to rapidly melting Arctic ice, which threatens the habitats of polar bears and other wildlife, disrupts local indigenous communities, and increases the risk of rising sea levels and extreme weather events.",
+"Overfishing in the South China Sea: Unsustainable fishing practices have led to the depletion of fish stocks in the South China Sea, threatening food security and causing ripple effects on marine ecosystems.",
+"E-waste in Agbogbloshie, Ghana: The Agbogbloshie dumpsite in Ghana has become one of the largest e-waste disposal sites in the world, leading to severe environmental contamination and health risks for local residents due to the hazardous materials present in electronic waste.",
+"Land degradation in the Sahel, Africa: The Sahel region in Africa is experiencing severe land degradation due to overgrazing, deforestation, and climate change, which contributes to desertification, reduced agricultural productivity, and increased food insecurity.",
+"Earthquake risk in Istanbul, Turkey: Istanbul is located near the North Anatolian Fault, making it highly vulnerable to earthquakes. The city's growing population and infrastructure challenges exacerbate the potential for significant loss of life and property in the event of a major earthquake.",
+"Human trafficking in Southeast Asia: Countries such as Thailand, Cambodia, and Vietnam face significant challenges related to human trafficking, including forced labor, sexual exploitation, and organ trafficking, which have severe human rights and social implications.",
+"Cybersecurity threats in Ukraine: Ukraine has faced numerous cyberattacks on its critical infrastructure, including power grids and government systems. These attacks have raised concerns about the vulnerability of digital systems worldwide and the potential for large-scale disruptions.",
+"Child labor in the Democratic Republic of Congo's cobalt mines: The mining of cobalt, a critical component in lithium-ion batteries, in the Democratic Republic of Congo often involves hazardous child labor, which exposes children to life-threatening risks and denies them access to education.",
+"Opioid crisis in the United States: The opioid epidemic in the United States has caused a dramatic increase in addiction, overdose deaths, and social and economic challenges, particularly in rural areas and economically disadvantaged communities.",
+"Loss of biodiversity in Madagascar: The island of Madagascar is a biodiversity hotspot, but it faces significant challenges due to habitat loss, deforestation, and illegal wildlife trade, which threaten the survival of its unique flora and fauna, including lemurs and other endemic species.",
+"Nuclear disaster risk in Fukushima, Japan: The 2011 Fukushima Daiichi nuclear disaster caused significant environmental contamination and displacement of local populations. Ongoing challenges include cleanup efforts, long-term health effects, and the safe decommissioning of the nuclear plant.",
+"Acid rain in China: Acid rain caused by air pollution from coal-fired power plants and industrial emissions has led to widespread damage to forests, agricultural lands, and freshwater ecosystems, as well as human health concerns, particularly in Eastern China.",
+"Education crisis in Afghanistan: The ongoing conflict, combined with the Taliban's restrictions on education, especially for girls, has resulted in a severe education crisis in Afghanistan, with millions of children out of school and limited access to quality education.",
+"Volcanic eruption risk in the Philippines: The Philippines is located in the Pacific Ring of Fire and is home to numerous active volcanoes. The risk of volcanic eruptions threatens local communities, agriculture, and infrastructure.",
+"Electronic waste pollution in Guiyu, China: Guiyu, China, is notorious for its electronic waste recycling industry, which exposes workers to hazardous materials and results in severe soil and water pollution due to improper waste management practices.",
+"Antibiotic resistance in India: The overuse of antibiotics in India, both in human medicine and agriculture, has contributed to the development of antibiotic-resistant bacteria, posing a significant threat to public health and the effectiveness of modern medicine.",
+"Polar ice melting in Antarctica: The melting of ice sheets in Antarctica, driven by climate change, contributes to rising sea levels and threatens global coastal communities, as well as causing disruptions to marine ecosystems and global weather patterns.",
+"Child malnutrition in North Korea: Widespread food shortages and economic hardship in North Korea have led to high rates of child malnutrition, stunting growth, and causing long-term developmental issues.",
+"Wildfires in California, United States: Climate change and land-use practices have contributed to increasingly severe and frequent wildfires in California, causing loss of life, property damage, and environmental impacts, such as air pollution and ecosystem destruction.",
+"Soil salinization in the Tigris and Euphrates river basins, Iraq: Inefficient irrigation practices and reduced water flow in the Tigris and Euphrates rivers have resulted in soil salinization, which threatens agricultural productivity and food security in Iraq."
+
       ];
 
       
