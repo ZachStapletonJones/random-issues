@@ -1,0 +1,96 @@
+<html>
+<head>
+  <title>Random Issues</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+<div id="random">
+  <div>
+    <button class="button-5" role="button">Pick Random Challenge</button>
+  </div>
+
+   
+  
+
+  <div id="output"></div>
+  </div>
+
+  <script>
+   
+    var btn = document.querySelector("button");
+    var out = document.getElementById("output");
+    
+  
+    btn.addEventListener("click", getWord);
+   
+    function getWord(){
+     
+      
+      var theWord= [
+        "Climate change and sea-level rise in Bangladesh: The low-lying coastal areas of Bangladesh are extremely vulnerable to sea-level rise, causing increased flooding, saltwater intrusion, and loss of land, which affects millions of people and their livelihoods.",
+"Deforestation in the Amazon Rainforest, Brazil: Deforestation driven by logging, agriculture, and cattle ranching continues to threaten the Amazon, causing loss of biodiversity, climate change impacts, and displacement of indigenous communities.",
+"Air pollution in Delhi, India: Delhi experiences hazardous levels of air pollution, primarily from vehicle emissions, industrial activity, and crop burning, leading to serious health problems and decreased life expectancy for its residents.",
+"Water scarcity in Cape Town, South Africa: Cape Town faced a severe water crisis in 2018, and the region continues to struggle with limited water resources due to climate change and inefficient water management, affecting both the population and the economy.",
+"Coral bleaching in the Great Barrier Reef, Australia: Rising sea temperatures and pollution have led to widespread coral bleaching, which threatens the health of the Great Barrier Reef, causing significant ecological and economic consequences.",
+"The European migration crisis: Conflict, persecution, and economic hardship in countries like Syria, Afghanistan, and Eritrea have driven many people to seek asylum in European countries, putting strain on social services and infrastructure and leading to political tensions.",
+"Food insecurity in Yemen: Ongoing conflict and economic collapse in Yemen have led to widespread food insecurity, leaving millions of people at risk of famine and malnutrition.",
+"Plastic pollution in the Pacific Garbage Patch: The Great Pacific Garbage Patch, a massive accumulation of plastic waste in the Pacific Ocean, poses a threat to marine life and ecosystems, as well as human health, through the ingestion of microplastics and toxic chemicals.",
+"Income inequality in the United States: The gap between the rich and the poor has grown significantly in the United States, leading to issues such as lack of access to quality education, healthcare, and affordable housing for many Americans.",
+"Rapid urbanization in Lagos, Nigeria: Lagos is one of the fastest-growing cities in the world, and rapid urbanization has led to inadequate infrastructure, housing, and public services, exacerbating poverty, pollution, and traffic congestion in the city.",
+"Melting Arctic ice in the Arctic region: Climate change has led to rapidly melting Arctic ice, which threatens the habitats of polar bears and other wildlife, disrupts local indigenous communities, and increases the risk of rising sea levels and extreme weather events.",
+"Overfishing in the South China Sea: Unsustainable fishing practices have led to the depletion of fish stocks in the South China Sea, threatening food security and causing ripple effects on marine ecosystems.",
+"E-waste in Agbogbloshie, Ghana: The Agbogbloshie dumpsite in Ghana has become one of the largest e-waste disposal sites in the world, leading to severe environmental contamination and health risks for local residents due to the hazardous materials present in electronic waste.",
+"Land degradation in the Sahel, Africa: The Sahel region in Africa is experiencing severe land degradation due to overgrazing, deforestation, and climate change, which contributes to desertification, reduced agricultural productivity, and increased food insecurity.",
+"Earthquake risk in Istanbul, Turkey: Istanbul is located near the North Anatolian Fault, making it highly vulnerable to earthquakes. The city's growing population and infrastructure challenges exacerbate the potential for significant loss of life and property in the event of a major earthquake.",
+"Human trafficking in Southeast Asia: Countries such as Thailand, Cambodia, and Vietnam face significant challenges related to human trafficking, including forced labor, sexual exploitation, and organ trafficking, which have severe human rights and social implications.",
+"Cybersecurity threats in Ukraine: Ukraine has faced numerous cyberattacks on its critical infrastructure, including power grids and government systems. These attacks have raised concerns about the vulnerability of digital systems worldwide and the potential for large-scale disruptions.",
+"Child labor in the Democratic Republic of Congo's cobalt mines: The mining of cobalt, a critical component in lithium-ion batteries, in the Democratic Republic of Congo often involves hazardous child labor, which exposes children to life-threatening risks and denies them access to education.",
+"Opioid crisis in the United States: The opioid epidemic in the United States has caused a dramatic increase in addiction, overdose deaths, and social and economic challenges, particularly in rural areas and economically disadvantaged communities.",
+"Loss of biodiversity in Madagascar: The island of Madagascar is a biodiversity hotspot, but it faces significant challenges due to habitat loss, deforestation, and illegal wildlife trade, which threaten the survival of its unique flora and fauna, including lemurs and other endemic species.",
+"Nuclear disaster risk in Fukushima, Japan: The 2011 Fukushima Daiichi nuclear disaster caused significant environmental contamination and displacement of local populations. Ongoing challenges include cleanup efforts, long-term health effects, and the safe decommissioning of the nuclear plant.",
+"Acid rain in China: Acid rain caused by air pollution from coal-fired power plants and industrial emissions has led to widespread damage to forests, agricultural lands, and freshwater ecosystems, as well as human health concerns, particularly in Eastern China.",
+"Education crisis in Afghanistan: The ongoing conflict, combined with the Taliban's restrictions on education, especially for girls, has resulted in a severe education crisis in Afghanistan, with millions of children out of school and limited access to quality education.",
+"Volcanic eruption risk in the Philippines: The Philippines is located in the Pacific Ring of Fire and is home to numerous active volcanoes. The risk of volcanic eruptions threatens local communities, agriculture, and infrastructure.",
+"Electronic waste pollution in Guiyu, China: Guiyu, China, is notorious for its electronic waste recycling industry, which exposes workers to hazardous materials and results in severe soil and water pollution due to improper waste management practices.",
+"Antibiotic resistance in India: The overuse of antibiotics in India, both in human medicine and agriculture, has contributed to the development of antibiotic-resistant bacteria, posing a significant threat to public health and the effectiveness of modern medicine.",
+"Polar ice melting in Antarctica: The melting of ice sheets in Antarctica, driven by climate change, contributes to rising sea levels and threatens global coastal communities, as well as causing disruptions to marine ecosystems and global weather patterns.",
+"Child malnutrition in North Korea: Widespread food shortages and economic hardship in North Korea have led to high rates of child malnutrition, stunting growth, and causing long-term developmental issues.",
+"Wildfires in California, United States: Climate change and land-use practices have contributed to increasingly severe and frequent wildfires in California, causing loss of life, property damage, and environmental impacts, such as air pollution and ecosystem destruction.",
+"Soil salinization in the Tigris and Euphrates river basins, Iraq: Inefficient irrigation practices and reduced water flow in the Tigris and Euphrates rivers have resulted in soil salinization, which threatens agricultural productivity and food security in Iraq.",
+        "Rising sea levels in the Maldives: As a low-lying island nation, the Maldives is highly vulnerable to the impacts of climate change and rising sea levels, which threaten to displace communities and cause significant economic and ecological damage.",
+"Drought in the Horn of Africa: Recurring droughts in countries such as Ethiopia, Somalia, and Kenya have led to widespread crop failures, livestock deaths, and food insecurity, exacerbating poverty and instability in the region.",
+"Air pollution in Ulaanbaatar, Mongolia: The Mongolian capital experiences extreme air pollution due to coal burning for heating during winter months, posing severe health risks for its residents, particularly young children and the elderly.",
+"Deforestation in Borneo: The rapid expansion of palm oil plantations, logging, and mining in Borneo has led to significant deforestation, threatening the island's rich biodiversity and the livelihoods of indigenous communities.",
+"Hurricane risk in the Caribbean: The Caribbean region faces increasing risks from more frequent and severe hurricanes due to climate change, which can cause widespread devastation, displacement, and economic hardship.",
+"Conflict minerals in the Democratic Republic of Congo: The illegal mining and trade of conflict minerals, such as gold, tantalum, tin, and tungsten, fuel violence and human rights abuses in the Democratic Republic of Congo.",
+"Erosion and land loss in Louisiana, United States: Coastal erosion and land loss in Louisiana are exacerbated by climate change, sea-level rise, and human activities, threatening communities, infrastructure, and the region's unique ecosystems.",
+"Urban sprawl in Mexico City, Mexico: Uncontrolled urban growth and sprawl in Mexico City have led to inadequate public services, housing, and transportation, as well as increasing social inequality, crime, and environmental pollution.",
+"Loss of wetlands in the Florida Everglades, United States: The Florida Everglades faces significant challenges due to pollution, water diversion, and invasive species, leading to the loss of wetlands and threatening the unique ecosystem and its biodiversity.",
+"Population decline in Eastern Europe: Countries such as Bulgaria, Romania, and Ukraine are experiencing population decline due to low birth rates, high mortality rates, and emigration, which can have negative impacts on the economy and social structures.",
+"Desertification in the Gobi Desert, China and Mongolia: The expansion of the Gobi Desert due to climate change, overgrazing, and unsustainable land-use practices threatens the livelihoods of millions of people and leads to ecological degradation.",
+"Glacier retreat in the Andes, South America: Climate change is causing rapid glacier retreat in the Andes, affecting water supply, agriculture, and hydroelectric power generation for millions of people in the region.",
+"Child soldiers in South Sudan: The ongoing conflict in South Sudan has led to the recruitment and use of child soldiers by armed groups, depriving these children of their rights and exposing them to violence and trauma.",
+"Haze pollution in Southeast Asia: Large-scale burning of forests and peatlands in Indonesia for agricultural expansion, particularly for palm oil production, causes haze pollution that affects millions of people across Southeast Asia.",
+"Unemployment in Greece: Greece has faced high unemployment rates, particularly among young people, as a result of the economic crisis and austerity measures, leading to social unrest and a brain drain.",
+"Wildlife poaching in Africa: The illegal poaching of elephants, rhinos, and other endangered species in Africa threatens their survival and has severe ecological, economic, and security implications.",
+"Healthcare crisis in Venezuela: The ongoing economic and political crisis in Venezuela has led to a collapse of the healthcare system, resulting in widespread shortages of essential medicines and medical supplies, as well as a resurgence of preventable diseases.",
+"Algal blooms in the Baltic Sea: Excessive nutrient pollution from agricultural runoff and sewage discharge has led to harmful algal blooms in the Baltic Sea, causing ecological damage, fish kills, and negative impacts on the tourism and fishing industries.",
+"Economic inequality in Brazil: Brazil faces significant income inequality, with a large gap between the rich and the poor, leading to social unrest, limited access to essential services, and challenges in addressing poverty and crime.",
+"Gentrification in San Francisco, United States: The rapid growth of the tech industry in San Francisco has led to gentrification, rising housing costs, and displacement of long-time residents, exacerbating social inequality and tensions in the city."
+
+      ];
+
+      
+      var wordNum = Math.floor(Math.random() * theWord.length);
+      
+     
+      output.textContent = theWord[wordNum];
+    }
+</script>
+</body>
+</html>
