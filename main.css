@@ -1,6 +1,6 @@
 #random {
     min-width:250px;
-    min-height: 250px;
+    min-height: 100px;
   font-family: 'Lato', sans-serif;
       }
   
@@ -48,11 +48,13 @@
     transform: translateY(0);
   }
       #output {
-      border: 1px solid gray;
+      
+      font-size:30px;
+      
       border-radius: 10px;
-      width:95%;
-      min-height: 120px;
-      padding:20px;
+      min-width:500px;
+      min-height: 20px;
+      padding-bottom:30px;
      
       }
    
